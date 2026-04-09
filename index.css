@@ -1,0 +1,86 @@
+/* --- EduBlue Premium Design System --- */
+:root {
+  --edu-blue: #1e40af;
+  --edu-dark-blue: #1e3a8a;
+  --edu-light-blue: #3b82f6;
+  --edu-bg-gray: #f8fafc;
+  --edu-text-main: #1e293b;
+  --edu-accent-green: #22c55e;
+  --edu-accent-purple: #8b5cf6;
+}
+
+body {
+  background-color: #ffffff !important; /* Landing page uses white background mostly */
+  color: var(--edu-text-main) !important;
+  font-family: 'Inter', sans-serif !important;
+}
+
+/* --- Hero & Section Wrappers --- */
+.section-light-gray { background-color: #f1f5f9; }
+.section-dark-blue { background-color: #0c1e3a; color: white; }
+
+/* --- Search Bar Container --- */
+.search-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  padding: 10px;
+  display: flex;
+  margin-top: -30px;
+  position: relative;
+  z-index: 20;
+}
+
+/* --- Stats Cards --- */
+.stats-bar {
+  background: linear-gradient(90deg, #1e3a8a 0%, #3b82f6 100%);
+  padding: 40px 0;
+  color: white;
+}
+
+/* --- Category Cards (Lists) --- */
+.category-card {
+  background: #2563eb;
+  color: white;
+  border-radius: 12px;
+  padding: 25px;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover { transform: translateY(-5px); }
+.category-card h5 { font-weight: 800; margin-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 10px; }
+.category-card ul { list-style: none; padding: 0; margin: 0; }
+.category-card li { margin-bottom: 8px; font-size: 0.85rem; opacity: 0.9; cursor: pointer; }
+.category-card li:hover { opacity: 1; text-decoration: underline; }
+
+/* --- Portal Cards --- */
+.portal-card { border: none; border-radius: 20px; padding: 30px; color: white; transition: all 0.3s ease; text-decoration: none !important; }
+.portal-card.blue { background: #3b82f6; }
+.portal-card.green { background: #10b981; }
+.portal-card.purple { background: #8b5cf6; }
+.portal-card:hover { transform: scale(1.05); filter: brightness(1.1); box-shadow: 0 20px 40px rgba(0,0,0,0.2); }
+
+/* --- Live Course Cards --- */
+.live-course-card {
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.live-course-card:hover { box-shadow: 0 15px 35px rgba(0,0,0,0.15); }
+.live-course-card .badge-live { position: absolute; top: 15px; left: 15px; background: #ef4444; color: white; font-weight: 700; padding: 4px 12px; border-radius: 4px; font-size: 10px; }
+.live-course-card .badge-save { position: absolute; top: 15px; right: 15px; background: #22c55e; color: white; font-weight: 700; padding: 4px 12px; border-radius: 4px; font-size: 10px; }
+
+/* --- Enroll Button --- */
+.btn-enroll { background: #2563eb; color: white; font-weight: 700; border-radius: 8px; padding: 10px 20px; border: none; }
+.btn-enroll:hover { background: #1e40af; }
+
+/* --- Modal Components --- */
+.modal-payment {
+  background: white;
+  border-radius: 24px;
+}
